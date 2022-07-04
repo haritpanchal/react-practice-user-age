@@ -3,7 +3,6 @@ import Button from "../UI/Button";
 import Card from "../UI/Card";
 import ErrorModal from "../UI/ErrorModal";
 import classes from "./AddUser.module.css";
-import UserList from "./UserList";
 
 const AddUser = (props) => {
   const [enteredUsername, setEnteredUserName] = useState("");
@@ -70,7 +69,6 @@ const AddUser = (props) => {
             id="age"
             type="number"
             value={enteredAge}
-            min="0"
             onChange={changeAgeHandler}
           />
           <Button type="submit">Add User</Button>
